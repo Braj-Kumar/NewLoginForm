@@ -1,0 +1,653 @@
+  <tr>
+                <td class="border border-gray-400 p-2">
+                 1
+                </td>
+                <td class="border border-gray-400 p-2">
+                 <img alt="Employee Image" height="50" src="https://storage.googleapis.com/a1aa/image/fJb4Rbgfb4s2eoYW7XUzTvXfYGvsFar0FlN6BWuLRuarTt6OB.jpg" width="50"/>
+                </td>
+                <td class="border border-gray-400 p-2">
+                 manish
+                </td>
+                <td class="border border-gray-400 p-2">
+                 <a class="text-blue-500" href="mailto:manish@cstech.in">
+                  manish@cstech.in
+                 </a>
+                </td>
+                <td class="border border-gray-400 p-2">
+                 954010033
+                </td>
+                <td class="border border-gray-400 p-2">
+                 Sales
+                </td>
+                <td class="border border-gray-400 p-2">
+                 Male
+                </td>
+                <td class="border border-gray-400 p-2">
+                 BCA
+                </td>
+                <td class="border border-gray-400 p-2">
+                 12-Feb-21
+                </td>
+                <td class="border border-gray-400 p-2">
+                 <a class="text-blue-500" href="#">
+                  Edit
+                 </a>
+                 -
+                 <a class="text-red-500" href="#">
+                  Delete
+                 </a>
+                </td>
+               </tr>
+               <tr>
+                <td class="border border-gray-400 p-2">
+                 1
+                </td>
+                <td class="border border-gray-400 p-2">
+                 <img alt="Employee Image" height="50" src="https://storage.googleapis.com/a1aa/image/fJb4Rbgfb4s2eoYW7XUzTvXfYGvsFar0FlN6BWuLRuarTt6OB.jpg" width="50"/>
+                </td>
+                <td class="border border-gray-400 p-2">
+                 yash
+                </td>
+                <td class="border border-gray-400 p-2">
+                 <a class="text-blue-500" href="mailto:yash@cstech.in">
+                  yash@cstech.in
+                 </a>
+                </td>
+                <td class="border border-gray-400 p-2">
+                 954010022
+                </td>
+                <td class="border border-gray-400 p-2">
+                 Manager
+                </td>
+                <td class="border border-gray-400 p-2">
+                 Male
+                </td>
+                <td class="border border-gray-400 p-2">
+                 BSC
+                </td>
+                <td class="border border-gray-400 p-2">
+                 11-Feb-21
+                </td>
+                <td class="border border-gray-400 p-2">
+                 <a class="text-blue-500" href="#">
+                  Edit
+                 </a>
+                 -
+                 <a class="text-red-500" href="#">
+                  Delete
+                 </a>
+                </td>
+               </tr>
+               <tr>
+                <td class="border border-gray-400 p-2">
+                 1
+                </td>
+                <td class="border border-gray-400 p-2">
+                 <img alt="Employee Image" height="50" src="https://storage.googleapis.com/a1aa/image/fJb4Rbgfb4s2eoYW7XUzTvXfYGvsFar0FlN6BWuLRuarTt6OB.jpg" width="50"/>
+                </td>
+                <td class="border border-gray-400 p-2">
+                 abhishek
+                </td>
+                <td class="border border-gray-400 p-2">
+                 <a class="text-blue-500" href="mailto:abhishek@cstech.in">
+                  abhishek@cstech.in
+                 </a>
+                </td>
+                <td class="border border-gray-400 p-2">
+                 954010033
+                </td>
+                <td class="border border-gray-400 p-2">
+                 HR
+                </td>
+                <td class="border border-gray-400 p-2">
+                 Male
+                </td>
+                <td class="border border-gray-400 p-2">
+                 MCA
+                </td>
+                <td class="border border-gray-400 p-2">
+                 13-Feb-21
+                </td>
+                <td class="border border-gray-400 p-2">
+                 <a class="text-blue-500" href="#">
+                  Edit
+                 </a>
+                 -
+                 <a class="text-red-500" href="#">
+                  Delete
+                 </a>
+                </td>
+               </tr>
+
+
+
+               
+    fetch('https://dummyjson.com/users', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ name, email, mobile, designation, gender, courses })
+    })
+    .then(response => response.json())
+    .then(data => {
+        alert('Employee created successfully');
+        console.log(data);
+    })
+    .catch(error => {
+        alert('Error creating employee');
+        console.error('Error:', error);
+    });
+
+
+    <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <div class="flex flex-col items-center justify-center min-h-screen">
+
+
+        <!-- Logo -->
+
+
+        <div class="mb-8">
+            <h1 class="text-2xl font-bold">Logo</h1>
+        </div>
+
+        <!-- Login Form -->
+
+
+        <div class="bg-white p-8 border border-black w-96">
+            <div class="bg-yellow-400 p-2 mb-4">
+                <h2 class="text-lg font-bold">Login Page</h2>
+            </div>
+            <form>
+                <div class="mb-4">
+                    <label for="username" class="block text-gray-700">User Name</label>
+                    <input type="text" id="username" class="w-full border border-black p-2">
+                </div>
+                <div class="mb-4">
+                    <label for="password" class="block text-gray-700">Password</label>
+                    <input type="password" id="password" class="w-full border border-black p-2 bg-blue-200">
+                </div>
+                <div class="mb-4">
+                    <button type="submit" class="w-full bg-green-400 p-2">Login</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Dashboard -->
+
+
+        <div class="mt-16 w-full max-w-4xl">
+            <div class="flex justify-between items-center bg-blue-200 p-2">
+                <div class="text-lg font-bold">Logo</div>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-700">Home</a>
+                    <a href="#" class="text-gray-700">Employee List</a>
+                    <span class="text-gray-700">Hukum Gupta -</span>
+                    <a href="#" class="text-gray-700">Logout</a>
+                </div>
+            </div>
+            <div class="bg-yellow-400 p-2">
+                <h2 class="text-lg font-bold">DashBord</h2>
+            </div>
+            <div class="p-4">
+                <h3 class="text-xl text-center">Welcome Admin Panel</h3>
+            </div>
+        </div>
+
+
+
+                <!-- 1st phase -->
+
+
+        <div class="container mx-auto p-4">
+            <div class="flex justify-between items-center border-b-2 pb-2 mb-4">
+                <div class="text-lg font-bold">Logo</div>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-blue-500">Home</a>
+                    <a href="#" class="text-blue-500">Employee List</a>
+                    <span class="text-blue-500">Hukum Gupta -</span>
+                    <a href="#" class="text-blue-500">Logout</a>
+                </div>
+            </div>
+            <div class="bg-yellow-300 p-2 mb-4">
+                <span class="font-bold">Create Employee</span>
+            </div>
+            <div class="grid grid-cols-12 gap-4">
+                <div class="col-span-3">
+                    <label for="name" class="block">Name</label>
+                    <input type="text" id="name" class="border w-full p-1" placeholder="textbox">
+                </div>
+                <br/>
+                <br/>
+                <div class="col-span-3">
+                    <label for="email" class="block">Email</label>
+                    <input type="email" id="email" class="border w-full p-1" placeholder="textbox">
+                </div>
+                <br/>
+                <br/>
+                <div class="col-span-3">
+                    <label for="mobile" class="block">Mobile No</label>
+                    <input type="text" id="mobile" class="border w-full p-1" placeholder="textbox">
+                </div>
+                <br/>
+                <br/>
+                <div class="col-span-3">
+                    <label for="designation" class="block">Designation</label>
+                    <select id="designation" class="border w-full p-1">
+                        <option>HR</option>
+                        <option>Manager</option>
+                        <option>Sales</option>
+                    </select>
+                </div>
+                <br/>
+                <br/>
+                <div class="col-span-3">
+                    <label for="gender" class="block">Gender</label>
+                    <div class="flex items-center space-x-2">
+                        <label class="inline-flex items-center">
+                            <input type="radio" name="gender" value="M" class="form-radio">
+                            <span class="ml-2">M</span>
+                        </label>
+                        <label class="inline-flex items-center">
+                            <input type="radio" name="gender" value="F" class="form-radio">
+                            <span class="ml-2">F</span>
+                        </label>
+                    </div>
+                </div>
+                <br/>
+                <br/>
+                <div class="col-span-3">
+                    <label for="course" class="block">Course</label>
+                    <div class="flex items-center space-x-2">
+                        <label class="inline-flex items-center">
+                            <input type="checkbox" name="course" value="MCA" class="form-checkbox">
+                            <span class="ml-2">MCA</span>
+                        </label>
+                        <label class="inline-flex items-center">
+                            <input type="checkbox" name="course" value="BCA" class="form-checkbox">
+                            <span class="ml-2">BCA</span>
+                        </label>
+                        <label class="inline-flex items-center">
+                            <input type="checkbox" name="course" value="BSC" class="form-checkbox">
+                            <span class="ml-2">BSC</span>
+                        </label>
+                    </div>
+                </div>
+                <br/>
+                <br/>
+                <div class="col-span-3">
+                    <label for="imgUpload" class="block">Img Upload</label>
+                    <input type="file" id="imgUpload" class="border w-full p-1">
+                </div>
+                <div class="col-span-3">
+                    <button class="bg-green-500 text-white p-2 mt-6">Submit</button>
+                </div>
+           
+                <br/>
+                <br/>
+            </div>
+        </div>
+
+                <!-- 2nd phase -->
+
+        <div class="container mx-auto p-4">
+            <!-- Header -->
+            <div class="flex justify-between items-center bg-blue-200 p-2">
+             <div class="flex items-center">
+              <div class="mr-4">
+               Logo
+              </div>
+              <div class="flex space-x-4">
+               <a class="text-black" href="#">
+                Home
+               </a>
+               <a class="text-black" href="#">
+                Employee List
+               </a>
+              </div>
+             </div>
+             <div class="flex items-center space-x-4">
+              <span>
+               Hukum Gupta -
+              </span>
+              <a class="text-black" href="#">
+               Logout
+              </a>
+             </div>
+            </div>
+            <!-- Employee List Header -->
+            <div class="bg-yellow-400 p-2 mt-2">
+             <span>
+              Employee List
+             </span>
+            </div>
+            <!-- Search and Create Employee -->
+            <div class="flex justify-between items-center mt-2">
+             <div class="flex items-center space-x-2">
+              <span>
+               Total Count: 4
+              </span>
+              <button class="bg-green-300 p-2">
+               Create Employee
+              </button>
+             </div>
+             <div class="flex items-center space-x-2">
+              <span>
+               Search
+              </span>
+              <input class="border p-1" placeholder="Enter Search Keyword" type="text"/>
+             </div>
+            </div>
+            <!-- Employee Table -->
+            <div class="mt-2">
+             <table class="min-w-full border-collapse border border-gray-400">
+              <thead class="bg-blue-200">
+               <tr>
+                <th class="border border-gray-400 p-2">
+                 Unique Id
+                </th>
+                <th class="border border-gray-400 p-2">
+                 Image
+                </th>
+                <th class="border border-gray-400 p-2">
+                 Name
+                </th>
+                <th class="border border-gray-400 p-2">
+                 Email
+                </th>
+                <th class="border border-gray-400 p-2">
+                 Mobile No
+                </th>
+                <th class="border border-gray-400 p-2">
+                 Designation
+                </th>
+                <th class="border border-gray-400 p-2">
+                 Gender
+                </th>
+                <th class="border border-gray-400 p-2">
+                 Course
+                </th>
+                <th class="border border-gray-400 p-2">
+                 Create date
+                </th>
+                <th class="border border-gray-400 p-2">
+                 Action
+                </th>
+               </tr>
+              </thead>
+              <tbody>
+               <tr>
+                <td class="border border-gray-400 p-2">
+                 1
+                </td>
+                <td class="border border-gray-400 p-2">
+                 <img alt="Employee Image" height="50" src="https://storage.googleapis.com/a1aa/image/fJb4Rbgfb4s2eoYW7XUzTvXfYGvsFar0FlN6BWuLRuarTt6OB.jpg" width="50"/>
+                </td>
+                <td class="border border-gray-400 p-2">
+                 hukum
+                </td>
+                <td class="border border-gray-400 p-2">
+                 <a class="text-blue-500" href="mailto:hcgupta@cstech.in">
+                  hcgupta@cstech.in
+                 </a>
+                </td>
+                <td class="border border-gray-400 p-2">
+                 954010044
+                </td>
+                <td class="border border-gray-400 p-2">
+                 HR
+                </td>
+                <td class="border border-gray-400 p-2">
+                 Male
+                </td>
+                <td class="border border-gray-400 p-2">
+                 MCA
+                </td>
+                <td class="border border-gray-400 p-2">
+                 13-Feb-21
+                </td>
+                <td class="border border-gray-400 p-2">
+                 <a class="text-blue-500" href="#">
+                  Edit
+                 </a>
+                 -
+                 <a class="text-red-500" href="#">
+                  Delete
+                 </a>
+                </td>
+               </tr>
+               <tr>
+                <td class="border border-gray-400 p-2">
+                 1
+                </td>
+                <td class="border border-gray-400 p-2">
+                 <img alt="Employee Image" height="50" src="https://storage.googleapis.com/a1aa/image/fJb4Rbgfb4s2eoYW7XUzTvXfYGvsFar0FlN6BWuLRuarTt6OB.jpg" width="50"/>
+                </td>
+                <td class="border border-gray-400 p-2">
+                 manish
+                </td>
+                <td class="border border-gray-400 p-2">
+                 <a class="text-blue-500" href="mailto:manish@cstech.in">
+                  manish@cstech.in
+                 </a>
+                </td>
+                <td class="border border-gray-400 p-2">
+                 954010033
+                </td>
+                <td class="border border-gray-400 p-2">
+                 Sales
+                </td>
+                <td class="border border-gray-400 p-2">
+                 Male
+                </td>
+                <td class="border border-gray-400 p-2">
+                 BCA
+                </td>
+                <td class="border border-gray-400 p-2">
+                 12-Feb-21
+                </td>
+                <td class="border border-gray-400 p-2">
+                 <a class="text-blue-500" href="#">
+                  Edit
+                 </a>
+                 -
+                 <a class="text-red-500" href="#">
+                  Delete
+                 </a>
+                </td>
+               </tr>
+               <tr>
+                <td class="border border-gray-400 p-2">
+                 1
+                </td>
+                <td class="border border-gray-400 p-2">
+                 <img alt="Employee Image" height="50" src="https://storage.googleapis.com/a1aa/image/fJb4Rbgfb4s2eoYW7XUzTvXfYGvsFar0FlN6BWuLRuarTt6OB.jpg" width="50"/>
+                </td>
+                <td class="border border-gray-400 p-2">
+                 yash
+                </td>
+                <td class="border border-gray-400 p-2">
+                 <a class="text-blue-500" href="mailto:yash@cstech.in">
+                  yash@cstech.in
+                 </a>
+                </td>
+                <td class="border border-gray-400 p-2">
+                 954010022
+                </td>
+                <td class="border border-gray-400 p-2">
+                 Manager
+                </td>
+                <td class="border border-gray-400 p-2">
+                 Male
+                </td>
+                <td class="border border-gray-400 p-2">
+                 BSC
+                </td>
+                <td class="border border-gray-400 p-2">
+                 11-Feb-21
+                </td>
+                <td class="border border-gray-400 p-2">
+                 <a class="text-blue-500" href="#">
+                  Edit
+                 </a>
+                 -
+                 <a class="text-red-500" href="#">
+                  Delete
+                 </a>
+                </td>
+               </tr>
+               <tr>
+                <td class="border border-gray-400 p-2">
+                 1
+                </td>
+                <td class="border border-gray-400 p-2">
+                 <img alt="Employee Image" height="50" src="https://storage.googleapis.com/a1aa/image/fJb4Rbgfb4s2eoYW7XUzTvXfYGvsFar0FlN6BWuLRuarTt6OB.jpg" width="50"/>
+                </td>
+                <td class="border border-gray-400 p-2">
+                 abhishek
+                </td>
+                <td class="border border-gray-400 p-2">
+                 <a class="text-blue-500" href="mailto:abhishek@cstech.in">
+                  abhishek@cstech.in
+                 </a>
+                </td>
+                <td class="border border-gray-400 p-2">
+                 954010033
+                </td>
+                <td class="border border-gray-400 p-2">
+                 HR
+                </td>
+                <td class="border border-gray-400 p-2">
+                 Male
+                </td>
+                <td class="border border-gray-400 p-2">
+                 MCA
+                </td>
+                <td class="border border-gray-400 p-2">
+                 13-Feb-21
+                </td>
+                <td class="border border-gray-400 p-2">
+                 <a class="text-blue-500" href="#">
+                  Edit
+                 </a>
+                 -
+                 <a class="text-red-500" href="#">
+                  Delete
+                 </a>
+                </td>
+               </tr>
+              </tbody>
+             </table>
+            </div>
+           </div>
+
+
+           <!-- 3rd phase -->
+
+           <div class="container mx-auto p-4">
+            <!-- Header -->
+            <div class="flex justify-between items-center bg-blue-100 p-2">
+                <div class="flex items-center">
+                    <div class="w-16 h-16 bg-gray-300 flex items-center justify-center">Logo</div>
+                    <nav class="ml-4">
+                        <a href="#" class="text-black px-4">Home</a>
+                        <a href="#" class="text-black px-4">Employee List</a>
+                    </nav>
+                </div>
+                <div class="flex items-center">
+                    <span class="text-black px-4">Hukum Gupta -</span>
+                    <a href="#" class="text-black px-4">Logout</a>
+                </div>
+            </div>
+    
+            <!-- Title -->
+            <div class="bg-yellow-400 text-black text-center py-2">
+                Employee Edit
+            </div>
+    
+            <!-- Form -->
+            <div class="bg-white p-4 mt-4">
+                <form>
+                    <div class="grid grid-cols-3 gap-4">
+                        <!-- Left Column -->
+                        <div>
+                            <div class="mb-4">
+                                <label class="block text-black">Name</label>
+                                <input type="text" value="hukum" class="border border-black w-full p-2">
+                            </div>
+                            <div class="mb-4">
+                                <label class="block text-black">Email</label>
+                                <input type="email" value="hcgupta@cstech.in" class="border border-black w-full p-2">
+                            </div>
+                            <div class="mb-4">
+                                <label class="block text-black">Mobile No</label>
+                                <input type="text" value="954010044" class="border border-black w-full p-2">
+                            </div>
+                            <div class="mb-4">
+                                <label class="block text-black">Designation</label>
+                                <input type="text" value="HR/Manager/sales" class="border border-black w-full p-2">
+                            </div>
+                            <div class="mb-4">
+                                <label class="block text-black">Gender</label>
+                                <input type="text" value="M/F" class="border border-black w-full p-2">
+                            </div>
+                            <div class="mb-4">
+                                <label class="block text-black">Course</label>
+                                <input type="text" value="MCA/BCA/BSC" class="border border-black w-full p-2">
+                            </div>
+                            <div class="mb-4">
+                                <label class="block text-black">Img Upload</label>
+                                <input type="text" class="border border-black w-full p-2">
+                            </div>
+                        </div>
+    
+                        <!-- Middle Column -->
+                        <div>
+                            <div class="mb-4">
+                                <label class="block text-black">Dropdown</label>
+                                <select class="border border-black w-full p-2">
+                                    <option>HR</option>
+                                    <option>Manager</option>
+                                    <option>Sales</option>
+                                </select>
+                            </div>
+                            <div class="mb-4">
+                                <label class="block text-black">Radio Button</label>
+                                <div class="flex items-center">
+                                    <input type="radio" name="gender" value="M" class="mr-2"> M
+                                    <input type="radio" name="gender" value="F" class="ml-4 mr-2"> F
+                                </div>
+                            </div>
+                            <div class="mb-4">
+                                <label class="block text-black">Checkbox</label>
+                                <div class="flex items-center">
+                                    <input type="checkbox" name="course" value="MCA" class="mr-2"> MCA
+                                    <input type="checkbox" name="course" value="BCA" class="ml-4 mr-2"> BCA
+                                    <input type="checkbox" name="course" value="BSC" class="ml-4 mr-2"> BSC
+                                </div>
+                            </div>
+                            <div class="mb-4">
+                                <label class="block text-black">File Upload</label>
+                                <input type="file" class="border border-black w-full p-2">
+                            </div>
+                            <div class="mb-4">
+                                <button type="submit" class="bg-green-400 text-black w-full p-2">Update</button>
+                            </div>
+                        </div>
+    
+                      
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

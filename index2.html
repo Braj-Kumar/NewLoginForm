@@ -1,0 +1,238 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page with API</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <div class="flex flex-col items-center justify-center min-h-screen">
+        <!-- Login Form -->
+        <div class="bg-white p-8 border border-black w-96">
+            <div class="bg-yellow-400 p-2 mb-4">
+                <h2 class="text-lg font-bold">Login Page</h2>
+            </div>
+            <form id="loginForm">
+                <div class="mb-4">
+                    <label for="username" class="block text-gray-700">User Name</label>
+                    <input type="text" id="username" class="w-full border border-black p-2" required>
+                </div>
+                <div class="mb-4">
+                    <label for="password" class="block text-gray-700">Password</label>
+                    <input type="password" id="password" class="w-full border border-black p-2 bg-blue-200" required>
+                </div>
+                <div class="mb-4">
+                    <button type="submit" class="w-full bg-green-400 p-2">Login</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Create Employee Form -->
+        <div class="container mx-auto p-4">
+            <div class="bg-yellow-300 p-2 mb-4">
+                <span class="font-bold">Create Employee</span>
+            </div>
+            <form id="createEmployeeForm">
+                <div class="grid grid-cols-12 gap-4">
+                    <div class="col-span-3">
+                        <label for="name" class="block">Name</label>
+                        <input type="text" id="name" class="border w-full p-1" required>
+                    </div>
+                    <div class="col-span-3">
+                        <label for="email" class="block">Email</label>
+                        <input type="email" id="email" class="border w-full p-1" required>
+                    </div>
+                    <div class="col-span-3">
+                        <label for="mobile" class="block">Mobile No</label>
+                        <input type="text" id="mobile" class="border w-full p-1" required>
+                    </div>
+                    <div class="col-span-3">
+                        <label for="designation" class="block">Designation</label>
+                        <select id="designation" class="border w-full p-1" required>
+                            <option>HR</option>
+                            <option>Manager</option>
+                            <option>Sales</option>
+                        </select>
+                    </div>
+                    <div class="col-span-3">
+                        <label for="gender" class="block">Gender</label>
+                        <div class="flex items-center space-x-2">
+                            <label class="inline-flex items-center">
+                                <input type="radio" name="gender" value="M" class="form-radio" required>
+                                <span class="ml-2">M</span>
+                            </label>
+                            <label class="inline-flex items-center">
+                                <input type="radio" name="gender" value="F" class="form-radio" required>
+                                <span class="ml-2">F</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-span-3">
+                        <label for="course" class="block">Course</label>
+                        <div class="flex items-center space-x-2">
+                            <label class="inline-flex items-center">
+                                <input type="checkbox" name="course" value="MCA" class="form-checkbox">
+                                <span class="ml-2">MCA</span>
+                            </label>
+                            <label class="inline-flex items-center">
+                                <input type="checkbox" name="course" value="BCA" class="form-checkbox">
+                                <span class="ml-2">BCA</span>
+                            </label>
+                            <label class="inline-flex items-center">
+                                <input type="checkbox" name="course" value="BSC" class="form-checkbox">
+                                <span class="ml-2">BSC</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-span-3">
+                        <label for="imgUpload" class="block">Img Upload</label>
+                        <input type="file" id="imgUpload" class="border w-full p-1">
+                    </div>
+                    <div class="col-span-3">
+                        <button type="submit" class="bg-green-500 text-white p-2 mt-6">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
+        <!-- 1st form -->
+
+        
+        <div class="container mx-auto p-4">
+            <!-- Header -->
+            <div class="flex justify-between items-center bg-blue-200 p-2">
+             <div class="flex items-center">
+              <div class="mr-4">
+               Logo
+              </div>
+              <div class="flex space-x-4">
+               <a class="text-black" href="#">
+                Home
+               </a>
+               <a class="text-black" href="#">
+                Employee List
+               </a>
+              </div>
+             </div>
+             <div class="flex items-center space-x-4">
+              <span>
+               Hukum Gupta -
+              </span>
+              <a class="text-black" href="#">
+               Logout
+              </a>
+             </div>
+            </div>
+            <!-- Employee List Header -->
+            <div class="bg-yellow-400 p-2 mt-2">
+             <span>
+              Employee List
+             </span>
+            </div>
+            <!-- Search and Create Employee -->
+            <div class="flex justify-between items-center mt-2">
+             <div class="flex items-center space-x-2">
+              <span>
+               Total Count: 4
+              </span>
+              <button class="bg-green-300 p-2">
+               Create Employee
+              </button>
+             </div>
+             <div class="flex items-center space-x-2">
+              <span>
+               Search
+              </span>
+              <input class="border p-1" placeholder="Enter Search Keyword" type="text"/>
+             </div>
+            </div>
+            <!-- Employee Table -->
+            <div class="mt-2">
+             <table class="min-w-full border-collapse border border-gray-400">
+              <thead class="bg-blue-200">
+               <tr>
+                <th class="border border-gray-400 p-2">
+                 Unique Id
+                </th>
+                <th class="border border-gray-400 p-2">
+                 Image
+                </th>
+                <th class="border border-gray-400 p-2">
+                 Name
+                </th>
+                <th class="border border-gray-400 p-2">
+                 Email
+                </th>
+                <th class="border border-gray-400 p-2">
+                 Mobile No
+                </th>
+                <th class="border border-gray-400 p-2">
+                 Designation
+                </th>
+                <th class="border border-gray-400 p-2">
+                 Gender
+                </th>
+                <th class="border border-gray-400 p-2">
+                 Course
+                </th>
+                <th class="border border-gray-400 p-2">
+                 Create date
+                </th>
+                <th class="border border-gray-400 p-2">
+                 Action
+                </th>
+               </tr>
+              </thead>
+              <tbody>
+               <tr>
+                <td class="border border-gray-400 p-2">
+                 1
+                </td>
+                <td class="border border-gray-400 p-2">
+                 <img alt="Employee Image" height="50" src="https://storage.googleapis.com/a1aa/image/fJb4Rbgfb4s2eoYW7XUzTvXfYGvsFar0FlN6BWuLRuarTt6OB.jpg" width="50"/>
+                </td>
+                <td class="border border-gray-400 p-2">
+                 hukum
+                </td>
+                <td class="border border-gray-400 p-2">
+                 <a class="text-blue-500" href="mailto:hcgupta@cstech.in">
+                  hcgupta@cstech.in
+                 </a>
+                </td>
+                <td class="border border-gray-400 p-2">
+                 954010044
+                </td>
+                <td class="border border-gray-400 p-2">
+                 HR
+                </td>
+                <td class="border border-gray-400 p-2">
+                 Male
+                </td>
+                <td class="border border-gray-400 p-2">
+                 MCA
+                </td>
+                <td class="border border-gray-400 p-2">
+                 13-Feb-21
+                </td>
+                <td class="border border-gray-400 p-2">
+                 <a class="text-blue-500" href="#">
+                  Edit
+                 </a>
+                 -
+                 <a class="text-red-500" href="#">
+                  Delete
+                 </a>
+                </td>
+               </tr>
+             
+              </tbody>
+             </table>
+            </div>
+           </div>
+
+
+        <!-- 2nd form -->
+
+    </div>
+<script src="script.js"></script>
+</body>
